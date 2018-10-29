@@ -1,0 +1,21 @@
+Variaveis: 
+
+Carro:
+
+Analógicos:
+Direção
+Pedal de aceleração
+Pedal de freio
+
+Digitais:
+N - ponto motor (qunado o piloto para no pit stop)
+L - limita velocidade do carro para conduzi-lo no pit stop
+Yes / No - para confirmar ou não se o piloto entendeu o que foi dito no rádio
+Radio - para se comunicar com o rádio
+Box - Para sinalizar que o piloto vai entrar no pit stop (caso o radio não funcione)
+
+
+--------------------------------------------------------------------------------------
+Rádio:
+
+Conminicar com o piloto (verificar como distribuir sons em lugares diferentes)

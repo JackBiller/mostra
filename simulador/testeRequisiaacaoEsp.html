@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Testar Reqwuisições ao ESP</h1>
+
+	IP: 
+	<input type="text" id="ip"><br>
+
+	<button onclick="testarRequisicao()">
+		Testar
+	</button>
+	
+	<script>
+		var ip = $("#ip").val(),
+			tempoDelay = 50,
+			statusAtual = 0,
+			numTest = 5000;
+		
+		function testarRequisicao(){
+			ip = $("#ip").val();
+			statusAtual++;
+			if(statusAtual <= numTest){
+				$.ajax({
+					url: ip,
+					data: { 'teste': statusAtual },
+					error: function(){
+						console.log("Error");
+						setTimeout( function(){
+							testarRequisicao();
+						}, tempoDelay);
+					}
+				}).done( function(data){
+					console.log("Done");
+					setTimeout( function(){
+						testarRequisicao();
+					}, tempoDelay);
+				});
+			}
+		}
+	</script>
+</body>
+</html>
