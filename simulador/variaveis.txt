@@ -19,3 +19,31 @@ Box - Para sinalizar que o piloto vai entrar no pit stop (caso o radio não func
 Rádio:
 
 Conminicar com o piloto (verificar como distribuir sons em lugares diferentes)
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Componentes para ultilizar na construção fisica
+
+02 | Arduino Leonardo
+01 | Display 7 seguimentos
+02 | Display 7 seguimentos 4 digidos
+20 | Push Button
+20 | Resistores (10k)
+05 | Potenciometros
+
+01 | ESP8266 NodeMCU 12 ep
+OU
+01 | ESP8266 NodeMCU 01 ep
+01 | ? Arduino Uno
+
+--------------------------------------------------------------------------------------
+Componentes para o carrinho
+
+01 | motor de passo DC
+04 | sensores de colisão logo alcansse
+04 | sensores de colisão baixo alcansse
+01 | servo motor
+01 | arduino uno
