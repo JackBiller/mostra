@@ -27,7 +27,7 @@ public class EnemyHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (currentHealth <= 0 && !isDead) {
-			Die ();
+			Die();
 		}
 	}
 
@@ -42,7 +42,7 @@ public class EnemyHealth : MonoBehaviour {
 			rb.isKinematic = false;
 			rb.detectCollisions = true;
 		}
-		Destroy (thisRb);
-		Destroy (gameObject, 2f);
+		Destroy(thisRb);
+		Destroy(gameObject, 2f);
 	}
 }

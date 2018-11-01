@@ -8,7 +8,6 @@ using UnityEngine;
 /// Possible improvements: it mainly handles audio, could be refactored.
 /// </summary>
 public class PlayerFreeze : MonoBehaviour {
-
 	public AudioClip sound;
 	public GameObject player;
 	AudioSource audio;

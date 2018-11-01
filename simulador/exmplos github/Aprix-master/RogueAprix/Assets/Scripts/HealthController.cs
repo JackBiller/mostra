@@ -61,6 +61,4 @@ public class HealthController : MonoBehaviour {
 		player.GetComponent<PlayerFreeze> ().Spawn ();
 		player.GetComponent<TimerLevel> ().timer+=5;
 	}
-
-
 }

@@ -4,7 +4,6 @@
 using UnityEngine;
 
 public class AspectUtility : MonoBehaviour {
-	
 	public float _wantedAspectRatio = 1.3333333f;
 	static float wantedAspectRatio;
 	static Camera cam;

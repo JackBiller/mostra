@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Tiro : MonoBehaviour {
-
     GameObject cam;
     AudioSource somDisparo;
     Text balasTXT;
@@ -21,8 +20,6 @@ public class Tiro : MonoBehaviour {
     public Animator animRifle;
 
     private bool estaRecarregando = false;
-	
-
 
 	void Start () {
         cam = GameObject.FindGameObjectWithTag("MainCamera");
@@ -33,48 +30,36 @@ public class Tiro : MonoBehaviour {
         recargaTXT.text = balasRecarga.ToString();
 
         anim = animRifle;
-
     }
-	
+
 	// Update is called once per frame
 	void Update () {
         Recarga();
-
-        if(taxaDeDisparo < 0.01f)
-        {
+        if(taxaDeDisparo < 0.01f){
             DisparoRifle();
             taxaDeDisparo = 0.1f;
         }
-
         taxaDeDisparo -= 0.012f;
-
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate(){
         estaRecarregando = anim.GetCurrentAnimatorStateInfo(0).IsName("reload");
     }
 
-    void DisparoPistola()
-    {
-        if (Input.GetMouseButtonDown(0) && balas > 0 && !estaRecarregando)
-        {
-
+    void DisparoPistola(){
+        if (Input.GetMouseButtonDown(0) && balas > 0 && !estaRecarregando){
             anim.CrossFadeInFixedTime("fire", 0.1f);
             somDisparo.Play();
             balas--;
             AtualizaTextos(balas, balasRecarga);
             RaycastHit objeto;
 
-            if (Physics.Raycast(cam.transform.position,cam.transform.forward,out objeto))
-            {
-                if (objeto.transform.CompareTag("Zombie"))
-                {
+            if (Physics.Raycast(cam.transform.position,cam.transform.forward,out objeto)){
+                if (objeto.transform.CompareTag("Zombie")){
                     objeto.transform.gameObject.GetComponent<Zombie>().vida -= 10;
                 }
 
-                if (objeto.transform.gameObject.GetComponent<Rigidbody>())
-                {
+                if (objeto.transform.gameObject.GetComponent<Rigidbody>()){
                     Rigidbody rb = objeto.transform.gameObject.GetComponent<Rigidbody>();
                     rb.AddExplosionForce(250f, objeto.point, 10);
                 }
@@ -82,26 +67,20 @@ public class Tiro : MonoBehaviour {
         }
     }
 
-    void DisparoRifle()
-    {
-        if (Input.GetMouseButton(0) && balas > 0 && !estaRecarregando)
-        {
-
+    void DisparoRifle(){
+        if (Input.GetMouseButton(0) && balas > 0 && !estaRecarregando){
             anim.CrossFadeInFixedTime("fire", 0.1f);
             somDisparo.Play();
             balas--;
             AtualizaTextos(balas, balasRecarga);
             RaycastHit objeto;
 
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out objeto))
-            {
-                if (objeto.transform.CompareTag("Zombie"))
-                {
+            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out objeto)){
+                if (objeto.transform.CompareTag("Zombie")){
                     objeto.transform.gameObject.GetComponent<Zombie>().vida -= 15;
                 }
 
-                if (objeto.transform.gameObject.GetComponent<Rigidbody>())
-                {
+                if (objeto.transform.gameObject.GetComponent<Rigidbody>()){
                     Rigidbody rb = objeto.transform.gameObject.GetComponent<Rigidbody>();
                     rb.AddExplosionForce(250f, objeto.point, 10);
                 }
@@ -109,43 +88,30 @@ public class Tiro : MonoBehaviour {
         }
     }
 
-    void AtualizaTextos(int balas,int balasNaReserva)
-    {
+    void AtualizaTextos(int balas,int balasNaReserva){
         balasTXT.text = balas.ToString();
         recargaTXT.text = balasNaReserva.ToString();
     }
 
-    void Recarga()
-    {
-        if (Input.GetKeyDown(KeyCode.R) && balasRecarga > 0 && balas < tamanhoDoPente && !anim.GetCurrentAnimatorStateInfo(0).IsName("fire"))
-        {
+    void Recarga(){
+        if (Input.GetKeyDown(KeyCode.R) && balasRecarga > 0 && balas < tamanhoDoPente && !anim.GetCurrentAnimatorStateInfo(0).IsName("fire")){
             int qtdACarregar = tamanhoDoPente - balas;
             int aux = 0;
 
-            if(balasRecarga >= qtdACarregar) 
-            {
+            if(balasRecarga >= qtdACarregar) {
                 aux = qtdACarregar;
-            }
-            else
-            {
+            } else {
                 aux = balasRecarga;
             }
             RecargaAnimacao();
             balasRecarga -= aux;
             balas += aux;
         }
-
         AtualizaTextos(balas,balasRecarga);
     }
     
-    void RecargaAnimacao()
-    {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("reload"))
-        {
-            return;
-        }
-
+    void RecargaAnimacao(){
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("reload")) return;
         anim.CrossFadeInFixedTime("reload", 0.1f);
     }
-
 }

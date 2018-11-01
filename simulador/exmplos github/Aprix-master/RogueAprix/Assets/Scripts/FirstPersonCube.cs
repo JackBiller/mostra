@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*First Person Cube
- * This class controls and dictates the behavior of the movement of the character
- * As of now, a character can move and rotate
- * Known Bugs: Whenever the player collides, if it does it fast enough, he may go flying.
- * */
+* This class controls and dictates the behavior of the movement of the character
+* As of now, a character can move and rotate
+* Known Bugs: Whenever the player collides, if it does it fast enough, he may go flying.
+* */
 
 public class FirstPersonCube : MonoBehaviour {
 	public float motionspeed=400f; //Motion Speed: Speed of the character, can be modified on runtime
@@ -18,24 +18,23 @@ public class FirstPersonCube : MonoBehaviour {
 	void Update () { //It moves, it turns, it jumps!
 		Move ();
 		Turn ();
-        Jump();
-
+		Jump();
 	}
 
 	/*onCollissionStay() Method
-	 * args: none
-	 * return: none
-	 * Checks if the character is on the ground or not. Doesn't work
-	 */
+	* args: none
+	* return: none
+	* Checks if the character is on the ground or not. Doesn't work
+	*/
 
 	void onCollisionStay(){
 		isGrounded = true;
 	}
 	/*Move() Method
-	 * args: none
-	 * return: none
-	 * Controls the player's ability to move.
-	 */
+	* args: none
+	* return: none
+	* Controls the player's ability to move.
+	*/
 	void Move(){
 		float deltatime = Time.deltaTime * motionspeed;
 		if(Input.GetKey(KeyCode.DownArrow)){
@@ -47,10 +46,10 @@ public class FirstPersonCube : MonoBehaviour {
 	}
 
 	/*Turn() Method
-	 * args: none
-	 * return: none
-	 * Controls the player's ability to rotate.
-	 */
+	* args: none
+	* return: none
+	* Controls the player's ability to rotate.
+	*/
 	void Turn(){
 		float deltarotation = Time.deltaTime * rotationspeed;
 		if(Input.GetKey(KeyCode.RightArrow)){
@@ -61,10 +60,10 @@ public class FirstPersonCube : MonoBehaviour {
 		}
 	}
 	/*Jump() Method
-	 * args: none
-	 * return: none
-	 * Controls the player's ability to jump.
-	 */
+	* args: none
+	* return: none
+	* Controls the player's ability to jump.
+	*/
 
 	void Jump(){
 		if (Input.GetKeyDown(KeyCode.Space)&&isGrounded){

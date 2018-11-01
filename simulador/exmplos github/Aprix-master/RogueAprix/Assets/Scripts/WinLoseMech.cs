@@ -63,12 +63,10 @@ public class WinLoseMech : MonoBehaviour {
 		yield return new WaitForSeconds(0.2f);
 		player.GetComponent<TimerLevel> ().timer += 5;
 		laps--;
-
 	}
 
 	IEnumerator isAbleAgain(){
 		yield return new WaitForSeconds(5);
 		isColliding = true;
-
 	}
 }

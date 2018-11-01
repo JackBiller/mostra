@@ -14,20 +14,15 @@ public class CampoDeVisao : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
+    private void OnTriggerEnter(Collider other){
+        if (other.gameObject.CompareTag("Player")){
             transform.parent.gameObject.GetComponent<Zombie>().deveSeguir = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
+    private void OnTriggerExit(Collider other){
+        if (other.gameObject.CompareTag("Player")){
             transform.parent.gameObject.GetComponent<Zombie>().deveSeguir = false;
         }
     }
-
 }
