@@ -38,5 +38,7 @@ void loop() {
       pagina = "{\"debug\":\"OK\"}";
       client.print(pagina);
       // delay(1000);
+  } else {
+    // Serial.println("Sem Requisicao");
   }
 }

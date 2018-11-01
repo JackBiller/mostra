@@ -1,0 +1,7 @@
+Link developer games
+
+http://www.seifert-engineering.de/ai-driver-toolkit/ai-driver-toolkit-tutorials/
+https://unity3d.com/pt/learn/tutorials
+http://www.schultzgames.com/t3767-ai-para-os-oponentes-de-jogo-de-corrida
+http://mendrixgames.blogspot.com/2011/11/tutorial-unity-3d-race-car.html
+https://github.com/topics/racing-games
