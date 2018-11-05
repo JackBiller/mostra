@@ -1,0 +1,101 @@
+Usando componentes
+Componentes são as porcas e parafusos de objetos e comportamentos em um jogo. 
+Eles são as partes funcionais de cada GameObject. 
+Se você ainda não entende o relacionamento entre os Componentes e os GameObjects, leia a página GameObjects antes de prosseguir.
+
+Um GameObject é um contêiner para muitos componentes diferentes. 
+Por padrão, todos os GameObjects possuem automaticamente um Componente de Transformação. 
+Isso ocorre porque o Transform determina onde o GameObject está localizado e como ele é girado e dimensionado. 
+Sem um componente de transformação, o GameObject não teria uma localização no mundo. 
+Tente criar um GameObject vazio agora como um exemplo. 
+Clique no item de menu GameObject-> Create Empty. 
+Selecione o novo GameObject e observe a Inspector.
+
+
+Mesmo GameObjects vazios possuem um componente de transformação
+Lembre-se de que você sempre pode usar o Inspector para ver quais Componentes estão anexados ao GameObject selecionado. 
+À medida que Componentes são adicionados e removidos, o Inspetor sempre mostra quais estão atualmente conectados. 
+Você usará o Inspector para alterar todas as propriedades de qualquer componente (incluindo scripts).
+
+Adicionando Componentes
+Você pode adicionar componentes ao GameObject selecionado através do menu Componentes. 
+Vamos tentar isso agora adicionando um Rigidbody o GameObject vazio que acabamos de criar. 
+Selecione-o e escolha Component-> Physics-> Rigidbody no menu. 
+Quando você fizer isso, verá as propriedades do Rigidbody aparecerem no Inspector. 
+Se você pressionar Play enquanto o GameObject vazio ainda está selecionado, você pode ter uma pequena surpresa. 
+Experimente e observe como o Rigidbody adicionou funcionalidade ao GameObject que estava vazio. 
+(A posição Y da transformação do GameObject começa a diminuir. Isso ocorre porque o mecanismo de física no Unity está causando a queda do GameObject na gravidade.)
+
+
+Um GameObject vazio com um componente de corpo rígido anexado
+Outra opção é usar o Navegador de componentes, que pode ser ativado com o botão Adicionar componente no inspetor do objeto.
+
+
+O Navegador de Componentes
+O navegador permite navegar pelos componentes convenientemente por categoria e também possui uma caixa de pesquisa que você pode usar para localizar componentes pelo nome.
+
+Você pode anexar qualquer número ou combinação de componentes a um único GameObject. 
+Alguns componentes funcionam melhor em combinação com outros. 
+Por exemplo, o Rigidbody trabalha com qualquer Collider.
+ . O Rigidbody controla o Transform através do mecanismo de física do NVIDIA PhysX, e oCollider permite que o Rigidbody colida e interaja com outros Colliders.
+
+Se você quiser saber mais sobre o uso de um determinado componente, você pode ler sobre qualquer um deles na página relevante Referência do componente. 
+Você também pode acessar a página de referência para um componente da Unity clicando no pequeno ? no cabeçalho do componente no Inspetor.
+
+Componentes de Edição
+Um dos grandes aspectos dos Componentes é a flexibilidade. 
+Quando você anexa um Componente a um GameObject, existem valores ou propriedades diferentes no Componente que pode ser ajustado no editor durante a criação de um jogo ou por scripts ao executar o jogo. 
+Existem dois tipos principais de propriedades: Valores e referências.
+
+Veja a imagem abaixo. É um GameObject vazio com um Audio Source componente. 
+Todos os valores da Fonte de Áudio no Inspetor são os valores padrão.
+
+Este componente contém uma única propriedade de referência e sete propriedades de valor. 
+Audio Clip é a propriedade de Referência. 
+Quando esta fonte de áudio começar a ser reproduzida, ela tentará reproduzir o arquivo de áudio mencionado na propriedade Audio Clip. 
+Se nenhuma referência for feita, ocorrerá um erro porque não há áudio a ser reproduzido. 
+Você deve referenciar o arquivo no Inspetor. 
+Isso é tão fácil quanto arrastar um arquivo de áudio da Visualização do Projeto na Propriedade de Referência ou usando o Seletor de Objetos.
+
+
+Agora, um arquivo de efeito de som é referenciado na propriedade Audio Clip
+Os componentes podem incluir referências a qualquer outro tipo de Componente, GameObjects ou Ativos. 
+Você pode ler mais sobre como atribuir referências na página sobre Edição de propriedades.
+
+As propriedades restantes no clipe de áudio são todas as propriedades de valor. Estes podem ser ajustados diretamente no Inspetor. 
+As propriedades de valor no clipe de áudio são todas alternadas, valores numéricos, campos suspensos, mas as propriedades de valor também podem ser strings de texto, cores, curvas e outros tipos. 
+Você pode ler mais sobre isso e sobre como editar propriedades de valor na página sobre como editar propriedades de valor.
+
+Comandos do Menu de Contexto do Componente
+O menu de contexto de um componente possui vários comandos úteis.
+
+O menu de contexto do componente
+Os mesmos comandos também estão disponíveis no ícone "engrenagem" no canto superior direito do painel do componente no inspetor.
+
+Restabelecer
+Este comando restaura os valores das propriedades do componente antes da sessão de edição mais recente.
+
+Remover
+Um comando Remove Component está disponível para casos em que você não precisa mais do componente anexado ao GameObject. 
+Observe que existem algumas combinações de componentes que dependem umas das outras (por exemplo, articulação articulada diante, mais só funciona quando um Rigidbody também está anexado); 
+você verá uma mensagem de aviso se tentar remover os componentes dos quais os outros dependem.
+
+Mover para cima / baixo
+Use os comandos Mover para Cima e Mover para Baixo para reorganizar a ordem dos componentes de um GameObject no Inspetor.
+
+Dica: Como alternativa, clique e arraste o nome do componente para cima ou para baixo na janela Inspetor e, em seguida, solte-o.
+
+Copiar e colar
+O comando Copiar Componente armazena o tipo e as configurações atuais da propriedade de um componente. 
+Estes podem então ser colados em outro componente do mesmo tipo com os valores de componente colar. 
+Você também pode criar um novo componente com os valores copiados em um objeto usando Colar componente como novo
+
+Testando propriedades
+Enquanto seu jogo estiver no Modo Play, você é livre para alterar as propriedades em qualquer Inspetor do GameObject. 
+Por exemplo, você pode querer experimentar diferentes alturas de salto. 
+Se você criar uma propriedade Jump Height em um script, poderá entrar no Modo de reprodução, alterar o valor e pressionar o botão de salto para ver o que acontece. 
+Então, sem sair do modo de reprodução, você pode alterá-lo novamente e ver os resultados em segundos. 
+Quando você sair do modo de reprodução, suas propriedades serão revertidas para os valores do modo anterior à reprodução, para que você não perca nenhum trabalho. 
+Esse fluxo de trabalho oferece incrível poder para experimentar, ajustar e refinar seu jogo sem investir muito tempo em ciclos de iteração. 
+Experimente com qualquer propriedade no modo de reprodução. 
+Achamos que você ficará impressionado.

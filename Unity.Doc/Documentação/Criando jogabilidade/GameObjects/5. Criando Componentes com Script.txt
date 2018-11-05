@@ -1,0 +1,10 @@
+Criando Componentes com Script
+Criar scripts (ou criar scripts) é escrever suas próprias adições à funcionalidade do Editor do Unity no código, usando a Unity Scripting API .
+
+Quando você cria um script e anexa-o a um GameObject, o script aparece no do GameObject Inspector apenas como um componente interno. 
+Isso é porque scripts se tornar componentes quando você as salva em seu projeto.
+
+Em termos técnicos, qualquer script que você faz compila como um tipo de componente, então o Editor Unity trata seu script como um componente embutido. 
+Você define os membros do script a serem expostos no Inspector e o Editor executa qualquer funcionalidade que você tenha escrito.
+
+Leia mais sobre como criar e usar scripts na seção Scripting deste Manual do Usuário.

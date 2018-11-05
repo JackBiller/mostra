@@ -1,0 +1,33 @@
+A janela Hierarquia
+
+A visualização da janela Hierarquia padrão quando você abre um novo projeto Unity
+
+A janela Hierarquia contém uma lista de cada GameObject (referido neste guia como um “objeto”) na Cena atual  . Algumas delas são instâncias diretas do Ativo arquivos (como modelos 3D), e outros são instâncias de Prefabs, que são objetos personalizados que compõem a maior parte do seu jogo. À medida que os objetos são adicionados e removidos na cena, eles também aparecem e desaparecem da hierarquia.
+
+Por padrão, os objetos são listados na janela Hierarquia na ordem em que são feitos. Você pode reordenar os objetos arrastando-os para cima ou para baixo ou tornando-os objetos “filho” ou “pai” (veja abaixo).
+
+Parenting
+Unity usa um conceito chamado Parenting . Quando você cria um grupo de objetos, o objeto mais alto ou Cena é chamado de "objeto pai", e todos os objetos agrupados abaixo dele são chamados de "objetos filho" ou "filhos". Você também pode criar objetos pai-filho aninhados (chamados “descendentes” do objeto pai de nível superior).
+
+Nesta imagem, Child e Child 2 são os objetos filhos do Parent.  A criança 3 é um objeto filho da Criança 2 e um objeto descendente da Matriz.
+
+Clique na seta suspensa de um objeto pai (no lado esquerdo de seu nome) para mostrar ou ocultar seus filhos. Mantenha pressionada a tecla Alt enquanto clica na seta suspensa para alternar a visibilidade de todos os objetos descendentes do pai, além do objeto filho imediato.
+
+Fazendo um objeto filho
+Para tornar qualquer objeto o “filho” de outro, arraste e solte o objeto filho desejado no objeto pai pretendido na Hierarquia.
+
+Nesta imagem, o Objeto 4 (selecionado) está sendo arrastado para o objeto pai pretendido, Objeto 1 (destacado em uma cápsula azul).
+Você também pode arrastar e soltar um objeto ao lado de outros objetos para torná-los “irmãos” - isto é, objetos filho sob o mesmo objeto pai. Arraste o objeto acima ou abaixo de um objeto existente até que uma linha azul horizontal apareça e solte-o para posicioná-lo ao lado do objeto existente.
+
+Nesta imagem, o Objeto 4 (selecionado) está sendo arrastado entre o Objeto 2 e o Objeto 3 (indicado pela linha horizontal azul), para ser colocado aqui como um irmão desses dois objetos no objeto pai Objeto 1 (destacado em uma cápsula azul). ).
+Objetos filho herdam o movimento e a rotação do objeto pai. Para saber mais sobre isso, consulte a documentação sobre o componente Transform.
+componente  .
+
+Classificação alfanumérica
+A ordem dos objetos na janela Hierarquia pode ser alterada para ordem alfanumérica. Na barra de menus, selecione Editar> Preferências no Windows ou Unity> Preferências no OS X para iniciar a janela Preferências . Marque Ativar Classificação Numérica Alfa .
+
+Quando você verifica isso, um ícone aparece no canto superior direito da janela Hierarquia, permitindo que você alterne entre a classificação Transform (o valor padrão) ou a classificação alfabética .
+
+
+Edição multi-cena
+É possível ter mais de uma cena aberta na janela Hierarquia ao mesmo tempo. Para saber mais sobre isso, consulte a página Edição de várias cenas .

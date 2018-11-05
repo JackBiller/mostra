@@ -1,0 +1,18 @@
+Opções do inspetor
+O Inspetor Lock e o Inspector Debug Mode são duas opções úteis que podem ajudá-lo em seu fluxo de trabalho.
+
+Bloqueio
+Não permite que quando selecionar outro objeto mude o objeto que está na visulização do inspetor automaticamente.
+Normalmente, o inspetor mostra os detalhes do objeto atualmente selecionado, mas às vezes é útil manter um objeto no inspetor enquanto você trabalha com os outros. 
+Para ativar isso, o inspetor tem um modo de bloqueio que você pode ativar com o pequeno ícone de cadeado no canto superior direito da janela do inspetor.
+
+Observe que você pode ter mais de um inspetor aberto de uma só vez (menu: Adicionar guia no menu da guia do inspetor), para que você possa manter um bloqueado e ter um segundo para mostrar a seleção atual. Abaixo está um exemplo de adição de uma nova guia e de bloqueio para que retenha a visualização desejada (nesse caso, as configurações do editor Gerenciador de tempo). O resultado são duas janelas do inspetor, ambas visíveis, cada uma mostrando um conteúdo diferente.
+
+Adicionando uma nova guia, encaixando-a na guia do inspetor atual e bloqueando-a.
+Debug / Normal Mode
+Outra opção no menu de guias é a escolha entre o modo Normal e o modo de depuração. 
+Normalmente, o inspetor mostra um editor personalizado para um ativo ou componente se está disponível, mas às vezes é útil ver as propriedades diretamente. 
+O modo de depuração mostra apenas as propriedades em vez de um editor personalizado e para scripts, ele também exibe variáveis ​​privadas (embora seus valores não possam ser editados como aqueles de variáveis ​​públicas).
+
+Script como visto no modo de depuração com variáveis ​​privadas acinzentadas
+Assim como no modo Bloquear, o modo Debug / Normal é aplicado a cada inspetor individualmente, para que você possa abrir dois inspetores de uma vez para ver ambas as visualizações.

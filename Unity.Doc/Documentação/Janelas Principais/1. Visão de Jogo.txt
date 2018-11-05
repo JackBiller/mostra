@@ -1,0 +1,47 @@
+A Game View é renderizada a partir da (s) câmera (s) do seu jogo. É representativo do seu jogo final e publicado. Você precisará usar um ou mais câmeras
+ para controlar o que o jogador realmente vê quando está jogando seu jogo. Para mais informações sobre Câmeras , por favor, veja a página Componente da Câmera .
+
+Modo de reprodução
+
+Use os botões na barra de ferramentas
+ para controlar o Editor Play Mode e ver como o seu jogo publicado é reproduzido. Enquanto estiver no modo de reprodução, todas as alterações feitas são temporárias e serão redefinidas quando você sair do modo de reprodução. A interface do usuário do
+ editor interface do  escurece para o lembrar disto.
+
+Barra de controle da visualização do jogo
+
+Botão:							Função:
+Exibição						Clique aqui para escolher em uma lista de Câmeras se você tiver várias Câmeras na Cena
+ 								. Isso está definido para exibir 1 por padrão. (Você pode atribuir Displays a câmeras no módulo Câmera, no menu suspenso Target Display .)
+
+Aspecto							Selecione valores diferentes para testar a aparência do seu jogo em monitores com diferentes proporções
+ 								. Isso é definido como Free Aspect por padrão.
+
+Proporções de baixa resolução	Marque esta caixa se você deseja emular o pixel.
+								 densidade de displays antigos: Isso reduz a resolução da visualização Game quando uma proporção é selecionada. Está sempre ativado quando a visualização do jogo está em um monitor não-retina.
+
+Controle deslizante de escala	Role para a direita para ampliar e examinar áreas da tela do jogo com mais detalhes. Ele também permite diminuir o zoom para ver a tela inteira em que a resolução do dispositivo 
+								é maior do que o tamanho da janela de visualização do jogo. Você também pode usar a roda de rolagem e o botão do meio do mouse para fazer isso enquanto o jogo está parado ou pausado.
+
+Maximizar no jogo				Clique para ativar: use isso para maximizar a visualização do Jogo (100% da sua Janela do Editor) para uma visualização em tela cheia ao entrar no Modo de Reprodução.
+
+Silenciar o áudio				Clique para ativar: use isso para silenciar qualquer áudio do jogo quando você entrar no modo de reprodução.
+
+Estatísticas					Clique aqui para alternar a sobreposição de estatísticas, que contém estatísticas de renderização sobre o áudio e os gráficos do seu jogo. Isso é muito útil para monitorar o 
+								desempenho do seu jogo enquanto estiver no Modo Play.
+
+Gizmos 							Clique aqui para alternar a visibilidade do Gizmos . Para ver apenas alguns tipos de Gizmo durante o modo de reprodução, clique na seta suspensa ao lado da palavra Gizmos e 
+								marque apenas as caixas dos tipos de Gizmo que você deseja ver. (Veja as opções do Gizmos abaixo)
+
+
+Menu Gizmos
+
+	O menu Gizmos contém muitas opções de como os objetos, ícones e gizmos são exibidos. Este menu está disponível na visualização Scene e na vista de Jogo. Veja a documentação no menu Gizmos para mais informações.
+
+Opções avançadas
+Clique com o botão direito na aba Game para exibir as opções avançadas do Game View.
+
+
+Avisar se não houver processamento de câmeras : essa opção é ativada por padrão: Isso faz com que um aviso seja exibido se nenhuma câmera estiver renderizando
+ para a tela. Isso é útil para diagnosticar problemas como excluir ou desativar acidentalmente uma câmera. Deixe isso ativado, a menos que você não esteja usando intencionalmente câmeras para renderizar seu jogo.
+
+Limpar cada quadro no modo de edição : esta opção é ativada por padrão: Isso faz com que a visualização do jogo seja apagada a cada quadro quando o jogo não está sendo reproduzido. Isso evita os efeitos de manchas enquanto você está configurando seu jogo. Deixe isso ativado, a menos que você esteja dependendo do conteúdo do quadro anterior quando não estiver no Modo de reprodução.

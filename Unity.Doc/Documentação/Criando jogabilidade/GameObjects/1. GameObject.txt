@@ -1,0 +1,19 @@
+GameObject
+
+GameObjects são os objetos fundamentais em Unity que representam personagens, objetos e cenário. 
+Eles não realizam muito em si mesmos, mas atuam como contêineres para os Componentes, que implementam a funcionalidade real.
+
+Por exemplo, um objeto Light é criado ao anexar um componente Light a um GameObject.
+
+Um simples GameObject Cube com vários componentes
+Um objeto de cubo sólido possui um Filtro de Malha e Malha componente Renderer, para desenhar a superfície do cubo, e um Box Collider componente para representar o volume sólido do objeto em termos de física.
+
+Um simples GameObject Cube com vários componentes
+
+Detalhes
+Um GameObject sempre tem um componente Transform anexado (para representar posição e orientação) e não é possível remover isso. 
+Os outros componentes que fornecem ao objeto sua funcionalidade podem ser adicionados a partir do menu Componente do editor ou de um script. 
+Há também muitos objetos pré-construídos úteis (formas primitivas, câmeras, etc.) disponíveis no menu GameObject> 3D Object, consulte Primitive Objects.
+
+Como os GameObjects são uma parte muito importante do Unity, há uma seção GameObjects no manual com muitos detalhes sobre eles. 
+Você pode descobrir mais sobre como controlar GameObjects de scripts na página de referência de scripts do GameObject.

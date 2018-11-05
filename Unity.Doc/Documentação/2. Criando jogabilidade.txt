@@ -1,0 +1,11 @@
+Criando jogabilidade
+
+O Unity permite que os criadores de jogos criem jogos. 
+O que é realmente especial sobre o Unity é que você não precisa de anos de experiência com código ou diploma em arte para fazer jogos divertidos. 
+Há um punhado de conceitos básicos de fluxo de trabalho necessários para aprender Unity. 
+Uma vez entendido, você se verá fazendo jogos em pouco tempo. 
+Com o tempo que você economizará para colocar seus jogos em funcionamento, você terá muito mais tempo para refinar, equilibrar e ajustar seu jogo com perfeição.
+
+Esta seção irá explicar os principais conceitos que você precisa conhecer para criar mecanismos de jogo. 
+A maioria desses conceitos exige que você escreva Scripts.
+ . Para obter uma visão geral da criação e do trabalho com scripts, leia a página Scripts.

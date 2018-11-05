@@ -1,0 +1,12 @@
+A barra de ferramentas
+
+A barra de ferramentas consiste em sete controles básicos. 
+Cada um se relaciona com diferentes partes do Editor.
+
+Transform Tools - 				usado com a Scene View
+Transform Gizmo Alterna - 		afetam a Vista Cena de exibição
+Botões Play / Pause / Step - 	usados ​​com a Game View
+Botão Cloud - 					abre a janela Unity Services.
+Drop-down da conta - 			usado para acessar sua conta do Unity.
+Layers Drop-down - 				controla quais objetos são exibidos na Scene Ver
+Layout suspenso - 				controla a organização de todas as vistas

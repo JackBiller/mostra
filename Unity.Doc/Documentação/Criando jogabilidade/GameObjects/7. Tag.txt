@@ -1,0 +1,65 @@
+Tag
+Um Tag é uma palavra de referência que você pode atribuir a um ou mais GameObjects. 
+Por exemplo, você pode definir tags de "Player" para caracteres controlados pelo jogador e uma tag "Inimigo" para caracteres não controlados pelo jogador. 
+Você pode definir itens que o jogador pode coletar em uma cena com uma tag "Colecionável".
+
+As tags ajudam você a identificar GameObjects para fins de script. 
+Eles garantem que você não precisa adicionar manualmente GameObjects às propriedades expostas de um script usando arrastar e soltar, economizando tempo quando você estiver usando o mesmo código de script em vários GameObjects.
+
+Tags são úteis para gatilhos no Collider control scripts; 
+eles precisam descobrir se o jogador está interagindo com um inimigo, um adereço ou um colecionador, por exemplo.
+
+Você pode usar a função GameObject.FindWithTag() para encontrar um GameObject configurando-o para procurar por qualquer objeto que contenha o Tag que você deseja. 
+O exemplo a seguir usa GameObject.FindWithTag(). 
+Instancia respawnPrefabno local de GameObjects com o Tag “Respawn”:
+
+JavaScript:
+
+var respawnPrefab : GameObject;
+var respawn = GameObject.FindWithTag("Respawn");
+Instantiate(respawnPrefab, respawn.position, respawn.rotation);
+
+C #:
+	using UnityEngine;
+	using System.Collections;
+
+	public class Example : MonoBehaviour {
+	    public GameObject respawnPrefab;
+	    public GameObject respawn;
+	    void Start() {
+	        if (respawn == null)
+	            respawn = GameObject.FindWithTag("Respawn");
+	        
+	        Instantiate(respawnPrefab, respawn.transform.position, respawn.transform.rotation) as GameObject;
+	    }
+	}
+
+Criando novas tags
+O Inspetor mostra que as Tag e Camada menus suspensos logo abaixo do nome de qualquer GameObject.
+
+Para criar uma nova tag, selecione Adicionar tag…. 
+Isso abre o Gerenciador de tags e camadas no Inspetor. 
+Observe que, depois de nomear uma tag, ela não pode ser renomeada mais tarde.
+
+As camadas são semelhantes às Tags, mas são usadas para definir como a Unity deve renderizar GameObjects na cena. 
+Veja a documentação na página Camadas para mais informações.
+
+Aplicando uma Tag
+O Inspetor mostra os menus suspensos Tag e Layer logo abaixo do nome de qualquer GameObject. 
+Para aplicar uma tag existente a um GameObject, abra a lista suspensa Tags e escolha a tag que você deseja aplicar. 
+O GameObject agora está associado a este Tag.
+
+Dicas: Um GameObject só pode ter um Tag atribuído a ele.
+
+O Unity inclui alguns tags internos que não aparecem no Gerenciador de tags:
+
+Sem marcação
+reaparecimento
+Terminar
+EditorOnly
+MainCamera
+Jogador
+Controle de vídeo game
+
+Você pode usar qualquer palavra que quiser como Tag. 
+Você pode até usar frases curtas, mas pode ser necessário ampliar o Inspetor para ver o nome completo da tag.

@@ -1,0 +1,12 @@
+Transformar
+O componente Transform  determina a Posição, Rotação e Escala de cada objeto na cena. 
+Cada GameObject tem uma Transformação.
+
+Propriedades
+Propriedade:		Função:
+Posição				Posição da transformação em coordenadas X, Y e Z.
+Rotação				Rotação da transformação em torno dos eixos X, Y e Z, medida em graus.
+Escala				Escala da transformação ao longo dos eixos X, Y e Z. O valor "1" é o tamanho original (tamanho em que o objeto foi importado).
+
+Os valores de posição, rotação e escala de uma transformação são medidos em relação ao pai da transformação. 
+Se a transformação não tiver pai, as propriedades serão medidas no espaço mundial.

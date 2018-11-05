@@ -1,0 +1,24 @@
+Desativando GameObjects
+Você pode marcar um GameObject como inativo para removê-lo temporariamente da Cena. 
+Para fazer isso, navegue até o Inspetor e desmarque a caixa de seleção ao lado donomedo GameObject (veja a imagem abaixo), ou use apropriedade activeSelf no script.
+
+
+A caixa de seleção de ativação de um GameObject ao lado do nome, ambos destacados na caixa vermelha
+Desativando um GameObject pai
+Quando você desativa um GameObject pai, você também desativa todos os seus GameObjects filhos.
+
+A desativação substitui a activeSelfconfiguração em todos os GameObjects filhos, portanto, o Unity torna a hierarquia inteira inativa do pai para baixo. 
+Isso não altera o valor da activeSelfpropriedade nos GameObjects filhos, para que eles retornem ao estado original quando você reativar o pai. Isso significa que você não pode determinar se um GameObject filho está atualmente ativo na Scene lendo sua propriedade activeSelf.
+Em vez disso, você deve usar a propriedade activeInHierarchy, que leva em consideração o efeito predominante do pai.
+
+Se você quiser alterar as configurações activeSelf de Game Objects de um GameObject, mas não o pai, você pode usar código como o seguinte:
+
+Script para desativar um GameObject filho:
+
+void DeactivateChildren(GameObject g, bool a) {
+    g.activeSelf = a;
+    
+    foreach (Transform child in g.transform) {
+        DeactivateChildren(child.gameObject, a);
+    }
+}

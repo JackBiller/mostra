@@ -1,0 +1,13 @@
+GameObjects
+O GameObject é o conceito mais importante no Editor Unity.
+
+Cada objeto no seu jogo é um GameObject, de personagens e itens colecionáveis ​​para luzes, câmeras e efeitos especiais. 
+No entanto, um GameObject não pode fazer nada sozinho; você precisa dar a ele propriedades antes que elas se tornem uma caracteristica, um ambiente ou um efeito especial.
+
+Quatro tipos diferentes de GameObject: um personagem animado, uma luz, uma árvore e uma fonte de áudio
+Para dar a um GameObject as propriedades que ele precisa para se tornar uma luz, ou uma árvore, ou uma câmera, você precisa adicionar componentes.
+ . Dependendo do tipo de objeto que você deseja criar, você adiciona diferentes combinações de componentes a um GameObject.
+
+Você pode pensar em um GameObject como um pote vazio e em componentes como ingredientes diferentes que compõem a receita do seu jogo. O Unity tem vários tipos de componentes internos diferentes e você também pode criar seus próprios componentes usando a Unity Scripting API .
+
+Esta seção explica como GameObjects, componentes e a API de script se encaixam e como criá-los e usá-los.

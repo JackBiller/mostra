@@ -1,0 +1,57 @@
+A janela do inspetor
+
+Os projetos no Unity Editor são compostos por vários GameObjects que contém scripts, sons, malhas e outros elementos gráficos, como luzes. O inspetor window (por vezes referido como "the Inspector") exibe informações detalhadas sobre o GameObject atualmente selecionado, incluindo todos os componentes
+anexados e suas propriedades, e permite que você modifique a funcionalidade do GameObjects em sua Scene.
+
+O inspetor em sua posição padrão no Unity
+Inspeção de GameObjects
+Use o Inspector para visualizar e editar as propriedades e configurações de quase tudo no Unity Editor, incluindo itens físicos do jogo, como GameObjects, Assets e Materials, bem como configurações e preferências do editor.
+
+A janela Inspector exibindo configurações para um GameObject típico e seus componentes quando você seleciona um GameObject na Hierarquia ou na Visualização de cena, o Inspetor mostra as propriedades de todos os componentes e Materiais daquele GameObject. Use o Inspetor para editar as configurações desses componentes e Materiais.
+
+A imagem acima mostra o Inspetor com a câmera principal GameObject selecionado. Além dos valores Posição, Rotação e Escala do GameObject, todas as propriedades da Câmera Principal estão disponíveis para edição.
+
+Inspecionando variáveis ​​de script
+A janela Inspector exibindo configurações para um GameObject com vários scripts personalizados anexados. As propriedades públicas dos scripts estão disponíveis para edição
+Quando GameObjects tem componentes de script customizados anexados, o Inspector exibe as variáveis ​​públicas desse script. Você pode editar essas variáveis ​​como configurações da mesma forma que pode editar as configurações dos componentes internos do Editor. Isso significa que você pode definir parâmetros e valores padrão em seus scripts facilmente sem modificar o código.
+
+Inspecionando Ativos
+A janela do Inspetor exibindo as configurações de um ativo material
+Quando um ativo está selecionado na janela Projeto, o Inspetor mostra as configurações relacionadas ao modo como o Ativo é importado e usado em tempo de execução (quando o jogo está sendo executado no Editor ou na versão publicada).
+
+Cada tipo de recurso tem uma seleção diferente de configurações. As imagens abaixo demonstram alguns exemplos do Inspetor exibindo as configurações de importação para outros tipos de ativos:
+
+A guia Modelo da janela Configurações de importação do modelo :
+
+A janela Inspetor exibindo as configurações de importação para um arquivo .fbx contendo modelos 3D
+A janela Configurações de importação do clipe de áudio :
+
+A janela do Inspetor exibindo as configurações de importação para um arquivo de áudio
+A janela Configuração de Importação de Textura :
+
+A janela do Inspetor exibindo as configurações de importação para uma textura
+Prefabs
+Se você tiver uma pré-fabricada selecionada, algumas opções adicionais estarão disponíveis na janela Inspetor.
+
+Para mais informações, consulte a documentação sobre Prefabs.
+
+Configurações do projeto
+A janela do Inspetor exibindo o painel Configurações de Projeto de Tags e Camadas
+Ao selecionar qualquer uma das categorias Configurações do projeto (menu: o Editor > Projeto Configurações), essas configurações são exibidas na janela Inspetor. Para mais informações, consulte a documentação sobre as configurações do projeto .
+
+Ícones e etiquetas
+Você pode atribuir ícones personalizados a GameObjects e scripts. Eles são exibidos na visualização Scene junto com ícones internos para GameObjects, como Lights e Cameras.
+
+Para mais informações sobre ícones e rótulos, consulte a documentação do Unity na atribuição de ícones .
+
+Reordenando componentes
+Para reorganizar os componentes na janela Inspetor, arraste e solte os cabeçalhos de uma posição para outra. Quando você arrasta um cabeçalho de componente, um marcador de inserção azul é exibido. Isso mostra onde o componente deve ir quando você soltar o cabeçalho:
+
+Arrastando e soltando componentes em um GameObject na janela Inspetor
+Você só pode reordenar componentes em um GameObject. Você não pode mover componentes entre GameObjects diferentes.
+
+Você também pode arrastar e soltar os Ativos de script diretamente na posição em que deseja que eles apareçam.
+
+Quando você seleciona vários GameObjects, o Inspector exibe todos os componentes que os GameObjects selecionados têm em comum. Para reordenar todos esses componentes comuns de uma só vez, selecione os Game Objects e, em seguida, arraste e solte os componentes em uma nova posição no Inspector.
+
+A ordem que você dá aos componentes na janela Inspetor é a ordem que você precisa usar ao consultar os componentes nos scripts do usuário. Se você consultar os componentes de forma programática, receberá o pedido que você vê no Inspetor.

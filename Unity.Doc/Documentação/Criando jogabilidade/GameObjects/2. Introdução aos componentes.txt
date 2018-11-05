@@ -1,0 +1,35 @@
+Introdução aos componentes
+Um GameObject contém componentes. (Veja a documentação do GameObject para mais informações.)
+
+Abaixo está um exemplo de como o relacionamento GameObject e componente funciona usando o componente mais comum, o componente Transform Component.
+
+Você pode ver o Transform Component olhando a Inspector para um novo GameObject:
+
+Abra qualquer cena em qualquer projeto no Unity Editor. (Consulte a documentação em Introdução para obter orientação sobre isso.)
+Crie um novo GameObject (menu: GameObject > Create Empty ).
+O novo GameObject é pré-selecionado, com o Inspetor mostrando seu Transform Component, como na imagem abaixo. (Se não estiver pré-selecionado, clique nele para ver seu Inspetor.)
+
+O inspetor de um novo GameObject vazio mostrando o componente Transform
+Observe que o novo GameObject vazio contém um nome ("GameObject"), uma tag (“Sem etiqueta”), e uma Layer (“Padrão”). 
+Também contém um componente de transformação.
+
+O componente de transformação
+É impossível criar um GameObject no Editor sem um Componente de Transformação. 
+Este componente define a posição, a rotação e a escala do GameObject no mundo do jogo e a visualização da cena.
+
+
+O Transform Component também permite um conceito chamado 'parenting', que é uma parte crítica do trabalho com GameObjects. 
+Para saber mais sobre o Transform Component e o parenting, consulte a página Transform Component Reference.
+
+Outros componentes
+O Transform Component é crítico para todos os GameObjects, então cada GameObject tem um, mas os GameObjects podem conter outros componentes também.
+
+Cada cena tem um GameObject da câmera principal por padrão. 
+Ele tem vários componentes. (Você pode ver isso selecionando-o em sua cena aberta.  para ver seu Inspetor.)
+
+A câmera principal é um tipo de GameObject - está em cada cena por padrão e tem vários componentes por padrão
+Olhando para o inspetor da GameObject da câmera principal, você pode ver que ela contém componentes adicionais. 
+Especificamente, um Componente de Câmera, um GUILayer, um Camada de Reflexo, e um ouvinte de áudio. 
+Todos esses componentes pode fornecer funcionalidade para este GameObject.
+
+Rigidbody, Collider, Sistema de partículas e Áudio são todos componentes diferentes que você pode adicionar a um GameObject.

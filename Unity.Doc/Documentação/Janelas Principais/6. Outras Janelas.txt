@@ -1,0 +1,8 @@
+Outras Janelas
+O Windows descrito nesta página abrange os conceitos básicos da interface no Unity. Os outros Windows no Unity são descritos em outro lugar em páginas separadas:
+
+A janela do console janela do mostra registros de mensagens, avisos e erros.
+A Janela de Animação pode ser usada para animar objetos na cena.
+A janela do Profiler pode ser usada para investigar e encontrar os gargalos de desempenho em seu jogo.
+A Janela de Iluminação pode ser usada para gerenciar a iluminação em sua cena.
+A janela Oclusão de remoção pode ser usada para gerenciar o exclusão de oclusão para melhorar o desempenho.

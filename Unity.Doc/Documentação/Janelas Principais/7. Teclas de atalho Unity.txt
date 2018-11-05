@@ -1,0 +1,88 @@
+Teclas de atalho Unity
+Esta página fornece uma visão geral dos atalhos de teclado padrão do Unity. 
+Você também pode baixar um PDF da tabela para Windows e MacOSX. 
+Quando um comando tem Ctrl / Cmd como parte do pressionamento de tecla, isso indica que a Control chave deve ser usado no Windows e na tecla Command no MacOSX.
+O trackpad do Mac também possui vários atalhos para navegar na visualização de cena.
+Consulte Navegação na vista da cena para saber mais sobre isso.
+
+Ferramentas
+Keystroke						Comando
+Q								Panela
+W								Mover
+E								Girar
+R								Escala
+T								Ferramenta de retificação
+Z								Alternar modo de rotação
+X								Rotação de Rotação de Pivô
+V								Vertex Snap
+CTRL / CMD + LMB				Snap 
+
+GameObject
+Ctrl / Cmd + Shift + N			Novo objeto de jogo vazio
+Alt + Shift + N					Novo filho vazio para o objeto de jogo selecionado
+Ctrl / Cmd + Alt + F			Mover para ver
+Ctrl / Cmd + Shift + F			Alinhar com vista
+Shift + F ou double-F			Bloqueia a cena view camera para o GameObject selecionado 
+
+Janela
+Ctrl / Cmd + 1					Cena
+Ctrl / Cmd + 2					jogos
+Ctrl / Cmd + 3					Inspector
+Ctrl / Cmd + 4					Hierarquia
+Ctrl / Cmd + 5					Projeto
+Ctrl / Cmd + 6					Animação
+Ctrl / Cmd + 7					Profiler
+Ctrl / Cmd + 9					Loja de ativos
+Ctrl / Cmd + 0					Controle de Versão
+Ctrl / Cmd + Shift + C			Console 
+
+Editar
+Ctrl / Cmd + Z					Desfazer
+Ctrl + Y (somente Windows)		Refazer
+Cmd + Shift + Z (somente Mac)	Refazer
+Ctrl / Cmd + X					Cortar
+Ctrl / Cmd + C					cópia de
+Ctrl / Cmd + V					Colar
+Ctrl / Cmd + D					Duplicado
+Shift + Del						Excluir
+F								Seleção de quadros (centro)
+Ctrl / Cmd + F					Encontrar
+Ctrl / Cmd + A					Selecionar tudo
+Ctrl / Cmd + P					Toque
+Ctrl / Cmd + Shift + P			Pausa
+Ctrl / Cmd + Alt + P			Degrau 
+
+Seleção
+Ctrl / Cmd + Shift + 1			Carregar Seleção 1
+Ctrl / Cmd + Shift + 2			Carregar Seleção 2
+Ctrl / Cmd + Shift + 3			Seleção de Carga 3
+Ctrl / Cmd + Shift + 4			Carregar Seleção 4
+Ctrl / Cmd + Shift + 5			Seleção de carga 5
+Ctrl / Cmd + Shift + 6			Seleção de carga 6
+Ctrl / Cmd + Shift + 7			Seleção de carga 7
+Ctrl / Cmd + Shift + 8			Seleção de carga 8
+Ctrl / Cmd + Shift + 9			Seleção de carga 9
+Ctrl / Cmd + Alt + 1			Salvar seleção 1
+Ctrl / Cmd + Alt + 2			Salvar seleção 2
+Ctrl / Cmd + Alt + 3			Salvar seleção 3
+Ctrl / Cmd + Alt + 4			Salvar seleção 4
+Ctrl / Cmd + Alt + 5			Salvar seleção 5
+Ctrl / Cmd + Alt + 6			Salvar seleção 6
+Ctrl / Cmd + Alt + 7			Salvar seleção 7
+Ctrl / Cmd + Alt + 8			Salvar seleção 8
+Ctrl / Cmd + Alt + 9			Salvar seleção 9
+
+Ativos
+Ctrl / Cmd + R					Atualizar
+Nota : As seguintes teclas de atalho de animação só funcionam na janela de animação.
+
+Animação
+Shift + vírgula					Primeiro chave
+Shift + K						Chave modificada
+K								Chave selecionada
+Shift + Período					Último quadro-chave
+Período							Próximo quadro
+Alt + Período					Próximo quadro-chave
+Espaço							Reproduzir animação
+Vírgula							Quadro anterior
+Alt + vírgula					Keyframe anterior

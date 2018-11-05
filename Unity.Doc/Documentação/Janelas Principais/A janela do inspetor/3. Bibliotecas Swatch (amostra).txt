@@ -1,0 +1,33 @@
+Bibliotecas Swatch (amostra)
+Use bibliotecas de amostras para reutilizar, salvar e compartilhar cores, gradientes e curvas de animação. 
+Você pode salvar e escolher amostras no Seletor de cores, no Editor de gradientes e no Editor de curvas.
+
+Seção Amostras (vermelho) no Seletor de Cores Unity
+Uma biblioteca de amostras é uma coleção de amostras que você salva em um arquivo. A seção Amostras exibe uma única biblioteca por vez.
+
+Para salvar uma amostra:
+
+Abra o Seletor de cores, o Editor de gradientes ou o Editor de curvas. Por exemplo, selecione Câmera principal na janela Hierarquia.
+Na Inspector janela, clique em Cor de Fundo.
+Na janela do selecionador, ajuste a cor, o gradiente ou a curva ao seu gosto.
+Em amostras, clique na caixa descrita.
+Se a visualização estiver no modo de lista, digite um nome para a amostra.
+
+Exemplo de salvar uma cor enquanto estiver na exibição de Grade
+Arraste e solte as amostras para alterar sua ordem. 
+Clique com o botão direito do mouse em uma amostra para movê-la para o início, substituí-la, renomeá-la ou excluí-la. Você também pode excluir uma amostra com a tecla Alt / Option pressionada.
+
+Use o menu suspenso em Amostras para:
+
+Escolha lista ou grade para alterar a exibição. A exibição de lista também exibe os nomes das amostras.
+Escolha uma biblioteca de amostras.
+Escolha Criar uma biblioteca para criar uma nova biblioteca de amostras e o local onde ela será salva.
+Escolha Reveal Current Library Location para visualizar a biblioteca atual no Windows Explorer / Mac OS Finder.
+Por padrão, o Unity salva bibliotecas de amostras nas preferências do usuário. Você também pode salvar uma biblioteca de amostras em seu projeto. 
+Unity salva as bibliotecas de amostras do Projeto na pasta Editor da pasta Ativos. 
+Para compartilhar bibliotecas de amostras do Project entre usuários ou incluí-las em um pacote, adicione-as a um repositório de controle de revisão.
+
+Para editar uma biblioteca de amostras do projeto:
+
+Selecione a biblioteca de amostras na janela Project.
+Na janela Inspetor, clique em Editar.

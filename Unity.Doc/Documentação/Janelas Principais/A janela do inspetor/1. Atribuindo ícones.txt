@@ -1,0 +1,37 @@
+Atribuindo ícones
+Unity permite que você atribua ícones personalizados para GameObjects e nos scripts. 
+Esses ícones são exibidos na visualização Scene, juntamente com ícones incorporados para itens como Luzes e Câmeras. 
+Use o menu Gizmos para controlar como os ícones são desenhados na cena vista .
+
+Botão de ícone de seleção de GameObject
+Para alterar o ícone de um GameObject, selecione o GameObject na janela Heirarchy ou Scene view, depois clique no botão Select Icon (o cubo azul, destacado com um quadrado vermelho na imagem abaixo) na Inspector janela  à esquerda do nome do GameObject.
+
+O botão GameObject Select Icon (aqui destacado com um quadrado vermelho) na janela Inspector
+Quando você atribui um ícone a um GameObject, o ícone é exibido na visualização Scene sobre esse GameObject (e quaisquer duplicatas feitas posteriormente). Você também pode atribuir o ícone a um Pré-fabricado  para aplicar o ícone a todas as instâncias desse Prefab na cena.
+
+Botão Selecionar ícone de script
+Para atribuir um ícone personalizado a um script, selecione o script na janela Projeto e, em seguida, clique no botão Selecionar ícone (o ícone de arquivo C#, destacado com um quadrado vermelho na imagem abaixo) na janela Inspetor à esquerda do nome do script .
+
+O botão Script Select Icon (aqui destacado com um quadrado vermelho) na janela Inspector
+Quando você atribui um ícone a um script, o ícone é exibido na visualização Scene sobre qualquer GameObject que tenha esse script anexado.
+
+O menu Selecionar ícone
+Independentemente de você estar atribuindo um ícone a um GameObject ou Script, o menu pop-up Selecionar ícone é o mesmo:
+
+
+O menu Selecionar ícone possui ícones internos. Clique em um ícone para selecioná-lo ou clique em Outro… para selecionar uma imagem do seu projeto. Ativos para usar como ícone.
+Os ícones internos se enquadram em duas categorias: ícones de rótulos e ícones somente de imagem.
+
+Ícones de etiqueta ou Rotulo
+Atribua um ícone de rótulo a um GameObject ou script para exibir o nome do GameObject na visualização Scene.
+
+Um GameObject com um ícone de etiqueta atribuído
+
+Ícones somente de imagem
+Ícones somente de imagem não mostram o nome do GameObject. Estes são úteis para atribuir GameObjects que podem não ter uma representação visual (por exemplo, waypoints de navegação). Com um ícone atribuído, você pode ver e clicar nele na visualização Scene para selecionar e mover um GameObject que de outra forma seria invisível.
+
+Um ícone de losango amarelo atribuído a vários GameObjects invisíveis
+Qualquer imagem do Ativo no seu projeto também pode ser usada como um ícone. Por exemplo, um ícone de caveira e ossos cruzados pode ser usado para indicar áreas de perigo no seu nível.
+
+Uma imagem de caveira e ossos cruzados foi atribuída a um script.  O ícone é exibido sobre qualquer GameObjects que tenha esse script anexado.
+Nota: Quando o ícone de um ativo é alterado, o próprio ativo é marcado como modificado e, portanto, selecionado pelo controle de versão. Sistemas de.

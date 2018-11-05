@@ -1,0 +1,25 @@
+Cenas
+Cenas contêm os ambientes e menus do seu jogo. 
+Pense em cada arquivo de cena exclusivo como um nível único. 
+Em cada cena, você coloca seus ambientes, obstáculos e decorações, essencialmente projetando e construindo seu jogo em pedaços.
+
+Uma nova cena vazia, com os objetos 3D padrão: uma câmera principal e uma luz direcional
+Quando você cria um novo projeto Unity, sua visão de cena apresenta uma nova cena. 
+Esta cena é sem título e não salva. 
+A cena está vazia, exceto por uma câmera (chamado Câmera Principal) e uma Luz (chamada Luz Direcional).
+
+Salvando Cenas
+Para salvar a cena em que você está trabalhando, escolha Arquivo > Salvar Cena no menu ou pressione Ctrl + S (Windows) ou Cmd + S (masOS).
+
+Unity salva cenas como ativos na pasta Ativos do seu projeto. 
+Isso significa que eles aparecem na janela Project, com o restante de seus ativos.
+
+Ativos de cena salvos visíveis na janela Projeto
+
+Abrindo Cenas
+Para abrir uma cena no Unity, clique duas vezes no Scene Asset na janela Project. 
+Você deve abrir uma cena no Unity para trabalhar nela.
+Se a sua cena atual contiver alterações não salvas, o Unity perguntará se você deseja salvar ou descartar as alterações.
+
+Edição multi-cena
+É possível ter várias cenas abertas para edição de uma só vez. Para obter mais informações sobre isso, consulte a documentação sobre edição multi-cena .

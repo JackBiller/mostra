@@ -1,0 +1,34 @@
+Procurando
+Ao trabalhar com grandes cenas complexas pode ser útil procurar por objetos específicos. 
+Ao usar o recurso Pesquisar no Unity, você pode filtrar apenas o objeto ou grupo de objetos que deseja ver. 
+Você pode pesquisar ativos pelo nome, por Componente tipo e, em alguns casos, por recurso Labels(veja abaixo). 
+Você pode especificar o modo de pesquisa escolhendo no menu suspenso Pesquisar.
+
+Pesquisa de cena
+Ambas as visualizações Scene e Hierarchy possuem uma caixa de pesquisa que permite filtrar objetos por seus nomes. 
+Como as duas visualizações são basicamente representações diferentes do mesmo conjunto de objetos, qualquer consulta de pesquisa que você digitar será duplicada nas duas caixas de pesquisa e aplicada às duas visualizações ao mesmo tempo. 
+Observe que ambas as visualizações mudam um pouco quando uma pesquisa está ativa: a Scene View os objetos filtrados em cinza e a visualização Hierarquia perderá as informações hierárquicas e simplesmente mostrará os objetos listados por nome:
+
+Visualizações de cena e hierarquia com filtragem de pesquisa aplicada.
+O pequeno botão cruzado à direita da caixa de pesquisa remove a consulta de pesquisa e restaura a exibição ao normal. 
+O menu no lado esquerdo da caixa permite escolher entre filtrar objetos por nome, por tipo ou ambos de uma só vez.
+
+Pesquisa de Projetos e Etiquetas
+Há também uma caixa de pesquisa na visualização Projeto.
+ . A pesquisa se aplica a ativos, e não a suas instâncias na cena.
+
+Uma opção adicional disponível para recursos é pesquisar por marcadores, bem como por nome e tipo. 
+Um rótulo é simplesmente um pequeno texto que você pode usar para agrupar recursos específicos. 
+Se você clicar no segundo botão do rótulo à esquerda da janela Project, verá um menu de rótulos existentes com uma caixa de texto na parte superior. 
+Você pode, então, solicitar um rótulo específico aos ativos atribuídos. 
+Além disso, você pode criar novos rótulos. 
+Por exemplo, você pode adicionar um rótulo "Veículos" para tornar fácil localizar todos os ativos do veículo. 
+Você pode adicionar um rótulo a um ativo na caixa Etiquetas de recursos, na parte inferior de seu inspetor.
+
+
+Adicionando um rótulo "Prop"
+A caixa de texto permite filtrar os rótulos existentes ou inserir o texto de um novo rótulo. 
+Você pode pressionar a barra de espaço ou digitar a chave enquanto digita para adicionar o novo texto de rótulo ao ativo. 
+Os rótulos atualmente aplicados a um ativo são mostrados com uma marca de seleção à esquerda no menu. 
+Você pode simplesmente "selecionar" um rótulo aplicado no menu para removê-lo. 
+Observe que qualquer recurso pode ter quantos rótulos desejar e, portanto, pertencer a vários grupos de rótulos diferentes de uma só vez.

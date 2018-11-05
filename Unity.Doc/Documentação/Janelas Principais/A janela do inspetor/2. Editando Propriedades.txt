@@ -1,0 +1,58 @@
+Editando Propriedades
+Propriedades configurações e opções para componentes que pode ser editado no inspetor.
+
+Componente leve mostrando várias propriedades de valor e referência
+As propriedades podem ser amplamente categorizadas como referências (links para outros objetos e ativos) ou valores (números, caixas de seleção, cores, etc).
+
+Referências
+As referências podem ser atribuídas arrastando e soltando um objeto ou ativo do tipo apropriado para a propriedade no inspetor. 
+Por exemplo, o Filtro de Malha componente precisa se referir a uma Malha recurso em algum lugar do projeto. 
+Quando o componente é criado inicialmente, a referência não é atribuída:
+
+… Mas você pode atribuir um Mesh a ele, largando um ativo Mesh nele:
+
+Você também pode usar o selecionador de objetos para selecionar um objeto para uma propriedade de referência. Se você clicar no ícone de círculo pequeno à direita da propriedade no inspetor, verá uma janela como esta:
+
+O selecionador de objetos permite procurar e selecionar objetos dentro da cena ou projete ativos (o painel de informações na parte inferior da janela pode ser levantado e abaixado conforme desejado). 
+Escolher um objeto para a propriedade de referência é simplesmente uma questão de clicar duas vezes no seletor.
+
+Quando uma propriedade de referência é de um tipo de componente (como Transform ), você pode soltar qualquer objeto nela; Unity localizará o primeiro componente desse tipo no objeto e o atribuirá à referência. Se o objeto não tiver componentes do tipo correto, a atribuição será rejeitada.
+
+Valores
+A maioria dos valores é editada usando caixas de texto, caixas de seleção e menus familiares, dependendo do tipo (por conveniência, os valores numéricos também podem ser movidos para cima ou para baixo arrastando o mouse sobre o rótulo do nome da propriedade). No entanto, existem alguns valores de tipos mais complexos que possuem seus próprios editores específicos. Estes são descritos abaixo.
+
+Cores
+Propriedades de cor abrem o Color Picker quando clicado.
+
+A janela do Seletor de cores do Unity
+A janela do HDR Color Picker (exibida ao clicar na propriedade de cor de emissão no shader padrão ou se você usar o ColorUsageAttribute em uma cor no script)
+A janela do HDR Color Picker mostrada com a opção tonemapped selecionada
+O Unity usa seu próprio seletor de cores, mas no Mac OS X você pode optar por usar o seletor de sistema nas Preferências (menu: Unidade> Preferências e Usar o Seletor de Cores do OS X no painel Geral).
+
+Gradientes
+Em gráficos e animações, geralmente é útil misturar uma cor gradualmente em outra, no espaço ou no tempo. Um gradiente é uma representação visual de uma progressão de cor, que simplesmente mostra as cores principais (chamadas de paradas ) e todas as cores intermediárias entre elas:
+
+
+As setas apontando para cima ao longo da parte inferior da barra de gradientes denotam as paradas. Você pode selecionar uma parada clicando nela; seu valor será mostrado na caixa Color que abrirá o selecionador de cores padrão quando clicado. Uma nova parada pode ser criada clicando abaixo da barra de gradientes. A posição de qualquer uma das paradas pode ser alterada simplesmente clicando e arrastando e uma parada pode ser removida com ctrl/cmd + delete .
+
+As setas apontando para baixo acima da barra de gradientes também são paradas, mas correspondem ao alfa (transparência) do gradiente naquele ponto. Por padrão, há duas paradas configuradas como 100% alfa (ou seja, totalmente opacas), mas qualquer número de paradas pode ser adicionado e editado da mesma maneira que a cor é interrompida.
+
+Curvas
+Uma Curva é um gráfico de linhas que mostra a resposta (no eixo Y) ao valor variável de uma entrada (no eixo X).
+
+Editor de curvas
+As curvas são usadas em vários contextos diferentes dentro do Unity, especialmente em animação, e possuem várias opções e ferramentas diferentes. Estes são explicados na página Editing Curves do manual.
+
+Matrizes
+Quando um script expõe uma matriz como uma variável pública, o inspetor mostrará um editor de valores que permite editar o tamanho da matriz e os valores ou referências dentro dela.
+
+Script com uma propriedade de matriz Vector3
+Quando você diminui a propriedade Size , os valores do final da matriz serão removidos. Quando você aumenta o tamanho, o último valor atual será copiado para todos os novos elementos adicionados. Isso pode ser útil ao configurar um array cujos valores são praticamente os mesmos - você pode definir o primeiro elemento e depois alterar o tamanho para copiá-lo para todos os outros elementos.
+
+Editando vários objetos ao mesmo tempo
+Quando você tem dois ou mais objetos selecionados, os componentes que eles têm em comum podem ser todos editados juntos (ou seja, os valores que você fornecer serão copiados para todos os objetos selecionados).
+
+Inspetor mostrando uma seleção múltipla
+Onde os valores da propriedade são os mesmos para todos os objetos selecionados, o valor será mostrado, mas caso contrário, será mostrado como um caractere traço. Somente componentes comuns a todos os objetos estarão visíveis no inspetor. Se algum objeto selecionado tiver componentes que não estejam presentes em outros objetos, o inspetor mostrará uma mensagem dizendo que alguns componentes estão ocultos. O menu de contexto de uma propriedade (aberto clicando com o botão direito do mouse no rótulo do nome) também possui opções para permitir que você defina seu valor a partir de qualquer um dos componentes selecionados.
+
+Note que você também pode editar várias instâncias selecionadas de um prefab uma só vez, mas os botões habituais Selecionar, Reverter e Aplicar não estarão disponíveis.
