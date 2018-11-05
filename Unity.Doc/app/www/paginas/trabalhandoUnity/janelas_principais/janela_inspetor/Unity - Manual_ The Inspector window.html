@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://docs.unity3d.com/Manual/UsingTheInspector.html -->
+<html lang="pt" class="js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths translated-ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script src="./Unity - Manual_ The Inspector window_files/1062735023749175" async=""></script>
+	<script async="" src="./Unity - Manual_ The Inspector window_files/fbevents.js.download"></script>
+	<script type="text/javascript" async="" src="./Unity - Manual_ The Inspector window_files/elqCfg.min.js.download"></script>
+	<script type="text/javascript" async="" src="./Unity - Manual_ The Inspector window_files/analytics.js.download"></script>
+	<script async="" src="./Unity - Manual_ The Inspector window_files/gtm.js.download"></script>
+	<script>
+		(function(w,d,s,l,i){
+			w[l]=w[l]||[];w[l].push({
+				'gtm.start':  new Date().getTime(),
+				event:'gtm.js'
+			});
+			var f=d.getElementsByTagName(s)[0],   
+				j=d.createElement(s),
+				dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+				j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+			f.parentNode.insertBefore(j,f);  
+		});
+		(window,document,'script','dataLayer','GTM-MC35ML');
+	</script>
+	<script src="./Unity - Manual_ The Inspector window_files/unity-cdp.js.download"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unity - Manual: The Inspector window</title>
+	<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+	<meta name="author" content="Unity Technologies">
+	<link rel="shortcut icon" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/favicon.ico">
+	<link rel="icon" type="image/png" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="https://docs.unity3d.com/StaticFilesManual/images/favicons/apple-touch-icon.png">
+	<meta name="msapplication-TileColor" content="#222c37">
+	<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+	<script type="text/javascript" src="./Unity - Manual_ The Inspector window_files/jquery.js.download"></script>
+	<script type="text/javascript" src="./Unity - Manual_ The Inspector window_files/core.js.download"></script>
+	<link type="text/css" rel="stylesheet" href="./Unity - Manual_ The Inspector window_files/font.css">
+	<script type="text/javascript" src="./Unity - Manual_ The Inspector window_files/toc.js.download"></script>
+	<script type="text/javascript" src="./Unity - Manual_ The Inspector window_files/global_toc.js.download"></script>
+	<link href="./Unity - Manual_ The Inspector window_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./Unity - Manual_ The Inspector window_files/core.css">
+	<link rel="stylesheet" href="./Unity - Manual_ The Inspector window_files/rating.min.css">
+	<script src="./Unity - Manual_ The Inspector window_files/rating.js.download"></script>
+	<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Unity - Manual_ The Inspector window_files/translateelement.css">
+</head>
+<body>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorWindowCallout.jpg" alt="O inspetor em sua posição padrão no Unity">
+		<figcaption>
+			<font style="vertical-align: inherit;">
+				<font style="vertical-align: inherit;">O inspetor em sua posição padrão no Unity</font>
+			</font>
+		</figcaption>
+	</figure>
+
+	<h2>
+		<font style="vertical-align: inherit;">
+			<font style="vertical-align: inherit;">Inspeção de GameObjects</font>
+		</font>
+	</h2>
+
+	<p>
+		<font style="vertical-align: inherit;">
+			<font style="vertical-align: inherit;">Use o Inspector para visualizar e editar as propriedades e configurações de quase tudo no Unity Editor, incluindo itens físicos do jogo, como GameObjects, Assets e Materials, bem como configurações e preferências do editor.</font>
+		</font>
+	</p>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/GenericInspector.png" alt="A janela Inspector exibindo configurações para um GameObject típico e seus componentes">
+		<figcaption>
+			<font style="vertical-align: inherit;">
+				<font style="vertical-align: inherit;">A janela Inspector exibindo configurações para um GameObject típico e seus componentes</font>
+			</font>
+		</figcaption>
+	</figure>
+
+	<p>When you select a GameObject in either the <a href="https://docs.unity3d.com/Manual/Hierarchy.html">Hierarchy</a> or <span class="tooltip">
+		<a href="https://docs.unity3d.com/Manual/UsingTheSceneView.html">Scene view</a>
+		<span class="tooltiptext">An interactive view into the world you are creating. You use the Scene View to select and position scenery, characters, cameras, lights, and all other types of Game Object. <a href="https://docs.unity3d.com/Manual/UsingTheSceneView.html">More info</a>
+			<br>
+			<span class="tooltipGlossaryLink">See in <a href="https://docs.unity3d.com/Manual/Glossary.html#SceneView">Glossary</a>
+			</span>
+		</span>
+	</span>, the Inspector shows the properties of all components and Materials of that GameObject. Use the Inspector to edit the settings of these components and Materials.</p>
+
+	<p>The image above shows the Inspector with the Main <span class="tooltip">
+		<strong>Camera</strong>
+		<span class="tooltiptext">A component which creates an image of a particular viewpoint in your scene. The output is either drawn to the screen or captured as a texture. <a href="https://docs.unity3d.com/Manual/CamerasOverview.html">More info</a>
+			<br>
+			<span class="tooltipGlossaryLink">See in <a href="https://docs.unity3d.com/Manual/Glossary.html#Camera">Glossary</a>
+			</span>
+		</span>
+	</span> GameObject selected. In addition to the GameObject’s Position, Rotation, and Scale values, all the properties of the Main <strong>Camera</strong> are available to edit.</p>
+
+	<h2>Inspecting script variables</h2>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorExampleObjWithScripts.png" alt="The Inspector window displaying settings for a GameObject with several custom scripts attached. The scripts’ public properties are available to edit">
+		<figcaption>The Inspector window displaying settings for a GameObject with several custom scripts attached. The scripts’ public properties are available to edit</figcaption>
+	</figure>
+
+	<p>When GameObjects have custom script components attached, the Inspector displays the public variables of that script. You can edit these variables as settings in the same way you can edit the settings of the Editor’s built-in components. This means that you can set parameters and default values in your scripts easily without modifying the code. </p>
+
+	<h2>Inspecting Assets</h2>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorExampleMaterial.png" alt="The Inspector window displaying the settings for a Material Asset">
+		<figcaption>The Inspector window displaying the settings for a Material Asset</figcaption>
+	</figure>
+
+	<p>When an <span class="tooltip">
+		<a href="https://docs.unity3d.com/Manual/AssetWorkflow.html">Asset</a>
+		<span class="tooltiptext">Any media or data that can be used in your game or project. An asset may come from a file created outside of Unity, such as a 3D model, an audio file or an image. You can also create some asset types in Unity, such as an Animator Controller, an Audio Mixer or a Render Texture. <a href="https://docs.unity3d.com/Manual/AssetWorkflow.html">More info</a>
+			<br>
+			<span class="tooltipGlossaryLink">See in <a href="https://docs.unity3d.com/Manual/Glossary.html#Asset">Glossary</a>
+			</span>
+		</span>
+	</span> is selected in your <a href="https://docs.unity3d.com/Manual/ProjectView.html">Project window</a>, the Inspector shows you the settings related to how that Asset is imported and used at run time (when your game is running either in the Editor or your published build). </p>
+
+	<p>Each type of Asset has a different selection of settings. The images below demonstrate some examples of the Inspector displaying the import settings for other Asset types:</p>
+
+	<p>The <a href="https://docs.unity3d.com/Manual/FBXImporter-Model.html">Model tab</a> of the <a href="https://docs.unity3d.com/Manual/class-FBXImporter.html">Model Import Settings</a> window:</p>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/MeshExample40.png" alt="The Inspector window displaying the import settings for an .fbx file containing 3D Models">
+		<figcaption>The Inspector window displaying the import settings for an .fbx file containing 3D Models</figcaption>
+	</figure>
+
+	<p>The <a href="https://docs.unity3d.com/Manual/class-AudioClip.html">Audio Clip Import Settings</a> window:</p>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorExampleAudio.png" alt="The Inspector window displaying the import settings for an Audio file">
+		<figcaption>The Inspector window displaying the import settings for an Audio file</figcaption>
+	</figure>
+
+	<p>The <a href="https://docs.unity3d.com/Manual/class-TextureImporter.html">Texture Import Setting</a> window:</p>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorExampleTexture.png" alt="The Inspector window displaying the Import Settings for a Texture">
+		<figcaption>The Inspector window displaying the Import Settings for a Texture</figcaption>
+	</figure>
+
+	<h2>Prefabs</h2>
+
+	<p>If you have a Prefab selected, some additional options are available in the Inspector window.</p>
+
+	<p>For more information, see documentation on <span class="tooltip">
+		<a href="https://docs.unity3d.com/Manual/Prefabs.html">Prefabs</a>
+		<span class="tooltiptext">An asset type that allows you to store a GameObject complete with components and properties. The prefab acts as a template from which you can create new object instances in the scene. <a href="https://docs.unity3d.com/Manual/Prefabs.html">More info</a>
+			<br>
+			<span class="tooltipGlossaryLink">See in <a href="https://docs.unity3d.com/Manual/Glossary.html#Prefab">Glossary</a>
+			</span>
+		</span>
+	</span>.</p>
+
+	<h2>Project settings</h2>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/InspectorExampleSettings.png" alt="The Inspector window displaying the Tags &amp; Layers Project Settings panel">
+		<figcaption>The Inspector window displaying the <strong>Tags &amp; Layers</strong> Project Settings panel</figcaption>
+	</figure>
+
+	<p>When you select any of the Project Settings categories (menu: <strong>Editor</strong> &gt; <span class="tooltip">
+		<strong>Project Settings</strong>
+		<span class="tooltiptext">A broad collection of settings which allow you to configure how Physics, Audio, Networking, Graphics, Input and many other areas of your project behave. <a href="https://docs.unity3d.com/Manual/comp-ManagerGroup.html">More info</a>
+			<br>
+			<span class="tooltipGlossaryLink">See in <a href="https://docs.unity3d.com/Manual/Glossary.html#ProjectSettings">Glossary</a>
+			</span>
+		</span>
+	</span>), these settings are displayed in the Inspector window. For more information, see documentation on <a href="https://docs.unity3d.com/Manual/comp-ManagerGroup.html">Project Settings</a>.</p>
+
+	<h2>Icons and labels</h2>
+
+	<p>You can assign custom icons to GameObjects and scripts. These display in the Scene view along with built-in icons for GameObjects such as Lights and Cameras.</p>
+
+	<p>For more about icons and labels, see Unity documentation on <a href="https://docs.unity3d.com/Manual/AssigningIcons.html">assigning icons</a>.</p>
+
+	<h2>Re-ordering components</h2>
+
+	<p>To reorder components in the Inspector window, drag-and-drop their headers from one position to another. When you drag a component header, a blue insertion marker appears. This shows you where the component should go when you drop the header:</p>
+
+	<figure>
+		<img src="./Unity - Manual_ The Inspector window_files/DragAndDropComponent.png" alt="Dragging and dropping components on a GameObject in the Inspector window">
+		<figcaption>Dragging and dropping components on a GameObject in the Inspector window</figcaption>
+	</figure>
+
+	<p>You can only reorder components on a GameObject. You can’t move components between different GameObjects.</p>
+
+	<p>You can also drag and drop script Assets directly into the position you want them to appear.</p>
+
+	<p>When you select multiple GameObjects, the Inspector displays all of the components that the selected GameObjects have in common. To reorder all of these common components at once, multi-select the GameObjects, then drag-and-drop the components into a new position in the Inspector.</p>
+
+	<p>
+		<font style="vertical-align: inherit;">
+			<font style="vertical-align: inherit;">A ordem que você dá aos componentes na janela Inspetor é a ordem que você precisa usar ao consultar os componentes nos scripts do usuário. </font>
+			<font style="vertical-align: inherit;">Se você consultar os componentes de forma programática, receberá o pedido que você vê no Inspetor.</font>
+		</font>
+	</p>
+
+	<hr>
+</body>
+</html>
