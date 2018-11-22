@@ -1,0 +1,46 @@
+O SCR ou Diodo Controlado de Silício é um dos componentes mais importantes nas aplicações em que esteja envolvido o contole de cargas de potência de altos valores a partir da rede de energia. Funcionando como um interruptor acionado eletronicamente ele facilmente supera seus equivalentes mecânicos, por sua velocidade, sensibilidade e capacidade de operar com tensäes e correntes elevadas. Não há limite para o número de aplicações práticas em que ele pode ser usado o que torna muito importante para todos conhecer um pouco de seu princípio de funcionamento, suas limitações e suas apicações principais. Neste artigo falamos de tudo isso. Partindo da estrutura do SCR e de seu princípio de funcionamento veremos também a maneira como são fabricados, circuitos de aplicação e muito mais.
+
+O SCRs ou diodos controlados de silício podem funcionar como elementos de disparo de circuitos eletrônicos, como relês de estado sólido, como osciladores de alta potência, como controles de potência em circuitos de corrente alternada, circuitos inversores e em uma infinidade de aplicações em que outros semicondutores tais como transistores bipolares, transistores de efeito de campo de potência e diodos comuns não podem ser usados. Por que tudo isso ?
+
+Os SCRs tem uma estrutura tal que manifesta propriedades elétricas que permitem que ele seja usado em todas estas aplicações. Assim, inicialmente podemos dizer que o que diferencia um SCR de outros componentes comuns tais como diodos retificadores comuns, e transistores é a sua estrutura que lhe confere propriedades bem definidas das quais passamos a falar a seguir.
+
+ 
+
+O QUE É UM SCR
+
+Se tivermos dois pedaços de materiais semicondutores unidos, um do tipo P e outro do tipo N de modo que entre eles haja uma junção, a estrutura assim formada manifestar  propriedades bem definidas que caracterizam o que denominamos diodo semicondutor.
+
+Esta estrutura se comporta no sentido de conduzir corrente intensamente quando polarizada no sentido direto e não conduzir praticamente a corrente oferecendo-lhe uma resistência muito alta, quando polarizada no sentido inverso, conforme sugere a figura 1.
+
+
+
+
+
+COMO FUNCIONAM OS SCRs
+
+Conforme vimos no ítem anterior a estrutura do SCR se compara à de dois transistores ligados de modo a formar uma chave regenerativa. Veja o leitor que, se na realidade o SCR equivale a dois transistores porque representá-lo por um símbolo que muito mais nos lembra um diodo ?
+
+O fato é que na realidade as características de condução obtidas com esta estrutura lembra muito mais os diodos do que propriamente os transistores. Em suma, mesmo podendo ter seu funcionamento equivalente ao de dois transistores, as características lembram muito mais os diodos comuns.
+
+Conforme o leitor pode ver o SCR possui três terminais que recebem denominações espec¡ficas:
+
+ 
+
+A para o anodo (anode)
+
+C ou K para o catodo (cathode)
+
+G para a comporta (gate)
+
+ 
+
+Na estrutura equivalente formada por transistores, o anodo corresponde ao emissor do primeiro transistor que é um do tipo PNP, o catodo corresponde ao emissor do segundo transistor. A base do primeiro transistor está ligada ao coletor do segundo, enquanto que a base do segundo transistor está ligada ao coletor do primeiro.
+
+O funcionamento deste circuito pode então ser explicado a partir da figura 9 da seguinte maneira:
+
+
+
+
+
+
+Referencia: http://www.newtoncbraga.com.br/index.php/como-funciona/9502-como-funciona-o-scr-art1902
